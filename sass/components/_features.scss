@@ -1,0 +1,40 @@
+.features__title{
+ @extend %visuallyHidden;
+}
+
+.features__list {
+    display: flex;
+}
+
+.features__box {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: $extraBackgroundColor;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.features__subtitle {
+    margin-bottom: 10px;
+
+    font-size: inherit;
+    text-transform: uppercase;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.features__text {
+    color: $secondaryTextColor;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.features__item {
+    width: 270px;
+
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+}

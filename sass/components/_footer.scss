@@ -1,0 +1,135 @@
+.footer-contacts {
+    background-color: $heroColor;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    > .container {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer-contact__wrapper>.logo {
+    padding-top: 0;
+    margin-bottom: 20px;
+
+    color: $extraColor;
+
+
+    @include transition(color);
+    // transition: color var(--animation-duration) var(--animation-timing-function);
+}
+
+.footer-contacts .logo:hover,
+.footer-contacts .logo:focus {
+    color: $accentColor;
+}
+
+.address {
+    margin-bottom: 9px;
+
+    color: rgba(255, 255, 255, 1);
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
+
+.footer-contacts__item:first-child {
+    margin-bottom: 9px;
+}
+
+.footer-contacts__link {
+    display: block;
+
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    @include transition(color);
+    // transition: color var(--animation-duration) var(--animation-timing-function);
+
+    &:hover, &:focus {
+        color: $accentColor;
+    }
+}
+
+.footer-social__wrapper {
+    margin-left: 70px;
+}
+
+.footer-social__text,
+.footer-form__text {
+    text-transform: uppercase;
+    color: $extraColor;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.footer-social__list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-social__item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.footer-social__link {
+    display: flex;
+
+    width: 44px;
+    height: 44px;
+
+    justify-content: center;
+    align-items: center;
+
+    color: $extraColor;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    @include transition(background-color);
+    // transition: background-color var(--animation-duration) var(--animation-timing-function);
+
+    &:hover, &:focus{
+    background-color: $accentColor;
+    }
+}
+
+.footer-social__icon {
+    fill: currentColor;
+}
+
+.footer-form__wrapper {
+    margin-left: 93px;
+}
+
+.footer-form__email {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-form__user-email {
+    width: 358px;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.footer-form__btn {
+    margin-left: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 29px;
+}
+
+.footer-form__icon {
+    margin-left: 10px;
+    fill: currentColor;
+}

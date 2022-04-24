@@ -1,0 +1,44 @@
+.page {
+    display: flex;
+    flex-direction: column;
+
+    background-color: $extraColor;
+    color: $primaryTextColor;
+    font-family: $mainFontFamily;
+    font-size: 14px;
+}
+
+.basic {
+    flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.item {
+    list-style-type: none;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

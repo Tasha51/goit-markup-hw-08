@@ -1,0 +1,27 @@
+.btn {
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 4px;
+
+    font-family: $mainFontFamily;
+    background-color: $accentColor;
+    color: $extraColor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    @include transition(background-color);
+    // transition: background-color $animationDuration $animationTimingFunction;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background-color: $extraButtonColor;
+    }
+}

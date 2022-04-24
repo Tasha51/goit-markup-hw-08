@@ -1,0 +1,37 @@
+.client__title {
+    @extend %sectionImage;
+}
+
+.client__list {
+    display: flex;
+}
+
+.client__item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.client__title{
+    @extend %sectionTitle
+}
+
+.client__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $socialLinkColor;
+    fill: $socialLinkColor;
+    border-radius: 4px;
+
+    // transition: fill var(--animation-duration) var(--animation-timing-function),
+    //     border-color var(--animation-duration) var(--animation-timing-function);
+
+    @include transition(fill);
+    @include transition(border-color);
+
+    &:hover, &:focus{
+        fill: $accentColor;
+        border-color: $accentColor;
+    }
+}
