@@ -1,13 +1,29 @@
 .filter {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    // margin-left: auto;
+    // margin-right: auto;
+    // margin-bottom: 50px;
+    margin-bottom: 25px;
+    @media screen and (max-width:767px){
+    flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px){justify-content: center;
     margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+    margin-right: auto;}
+    
 }
 
-.filter__item:not(:first-child) {
-    margin-left: 10px;
+.filter__item{
+    @media screen and (max-width:767px){
+    margin-bottom: 15px;
+    }
+    
+    // margin-left: 10px;
+    &:not(:last-child){
+    margin-right: 8px;
+    }
 }
 
 .filter__btn {
@@ -28,9 +44,7 @@
     @include transition(background-color);
     @include transition(color);
     @include transition(box-shadow);
-    // transition: background-color var(--animation-duration) var(--animation-timing-function),
-    //     color var(--animation-duration) var(--animation-timing-function),
-    //     box-shadow var(--animation-duration) var(--animation-timing-function);
+
 
     &:hover,
     &:focus {

@@ -4,18 +4,44 @@
 
 .services__img{
     @extend %sectionImage;
+    width: 100%;
 }
 
 .services__list {
+     margin-left: -15px;
+
+
+    @media screen and (min-width:$tablet){
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
+    // margin-left: -30px;
     margin-top: -30px;
 
+    }
+    
+    @media screen and (min-width:$tablet){
+        margin-left: -30px;}
+
+
     >.item {
-        flex-basis: calc(100% / 3 - 30px);
-        margin-left: 30px;
         margin-top: 30px;
+
+        @media screen and (max-width:767px){
+            flex-basis: calc(100% / 1 - 15px);
+            margin-left: 15px;
+        }
+
+        @media screen and (min-width:$tablet) and(max-width:1199px){
+            flex-basis: calc(100% / 2 - 30px);
+            margin-left: 30px;
+        }
+        
+         @media screen and (min-width:$desktop){
+            flex-basis: calc(100% / 3 - 30px);
+            margin-left: 30px;
+        }
+        
+        
     }
 }
 
@@ -23,7 +49,7 @@
     display: block;
 
     @include transition(box-shadow);
-    // transition: box-shadow var(--animation-duration) var(--animation-timing-function);
+   
     &:hover,
     &:focus {
         box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06),
@@ -60,7 +86,7 @@
     background-color: rgba(33, 150, 243, 0.9);
 
     @include transition(transform);
-    // transition: transform var(--animation-duration) var(--animation-timing-function);
+  
 
     .services__link:hover &,
     .services__link:focus & {

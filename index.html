@@ -26,17 +26,37 @@
       <div class="container">
         <nav class="nav">
           <a href="./index.html" lang="en" class="logo link"><span class="link">Web</span>Studio</a>
-          <ul class="nav__list">
-            <li class="nav__item item">
-              <a href="./index.html" class="nav__link link nav__link--current">Студия</a>
-            </li>
-            <li class="nav__item item">
-              <a href="./portfolio.html" class="nav__link link">Портфолио</a>
-            </li>
-            <li class="nav__item item">
-              <a href="#contact" class="nav__link link">Контакты</a>
-            </li>
-          </ul>
+
+          <button
+            type="button"
+            class="mobile-menu__btn"
+            data-menu-button
+            aria-label="Переключатель мобильного меню"
+            aria-expanded="false"
+          >
+            <svg width="40" height="40" class="mobile-menu__icon">
+              <use class="mobile-menu__icon--open" href="./images/icons.svg#mobile-menu-open"></use>
+
+              <use
+                class="mobile-menu__icon--close"
+                href="./images/icons.svg#mobile-menu-close"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="nav__wrapper">
+            <ul class="nav__list">
+              <li class="nav__item item">
+                <a href="./index.html" class="nav__link link nav__link--current">Студия</a>
+              </li>
+              <li class="nav__item item">
+                <a href="./portfolio.html" class="nav__link link">Портфолио</a>
+              </li>
+              <li class="nav__item item">
+                <a href="#contact" class="nav__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <div class="header-contacts__wrapper">
           <ul class="header-contacts__list">
@@ -548,6 +568,86 @@
         <button type="submit" class="btn">Отправить</button>
       </div>
     </div>
+    <!-- Мобильное меню -->
+    <div class="mobile-overlay" data-menu>
+      <div class="mobile-menu">
+        <nav class="mobile-menu__wrapper">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item item">
+              <a href="./index.html" class="mobile-menu__link link">Студия</a>
+            </li>
+            <li class="mobile-menu__item item">
+              <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item item">
+              <a href="#contact" class="mobile-menu__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__contact-wrapper">
+          <ul class="mobile-menu__contact-list">
+            <li class="mobile-menu__contact-item item">
+              <a href="tel:+380961111111" class="mobile-menu__tel-link link"> +38 096 111 11 11 </a>
+            </li>
+            <li class="mobile-menu__contact-item item">
+              <a href="meilto:info@devstudio.com" class="mobile-menu__meil-link link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__social-wrapper">
+          <ul class="mobile-menu__social-list list">
+            <li class="mobile-menu__social-item item">
+              <a
+                href=""
+                class="mobile-menu__social-link link"
+                aria-label="instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </li>
+            <li class="mobile-menu__social-item item">
+              <a
+                href=""
+                class="mobile-menu__social-link link"
+                aria-label="twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+            </li>
+            <li class="mobile-menu__social-item item">
+              <a
+                href=""
+                class="mobile-menu__social-link link"
+                aria-label="facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </a>
+            </li>
+            <li class="mobile-menu__social-item item">
+              <a
+                href=""
+                class="mobile-menu__social-link link"
+                aria-label="linkedln"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Linkedln
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

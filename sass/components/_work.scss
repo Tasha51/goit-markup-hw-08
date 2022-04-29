@@ -1,5 +1,14 @@
+.work.section{
+    @media screen and(max-width:1199px) {
+        display: none;
+    }
+}
 .work.section {
     padding-top: 0;
+
+    @media screen and (max-width: 1200px) {
+    display: none;    
+    }
 }
 
 .work__title{

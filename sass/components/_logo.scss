@@ -1,20 +1,24 @@
 .logo {
     display: block;
-    padding-top: 24px;
+    
 
     font-family: $extraFontFamily;
     font-weight: 700;
-    font-size: 26px;
+    
+    font-size: 24px;
     color: $primaryTextColor;
     line-height: 1.19;
     letter-spacing: 0.03em;
-
+    
+    @media screen and (min-width:$tablet){
+        font-size: 26px;
+    }
 
     > .link {
         color: $accentColor;
 
         @include transition(color);
-        // transition: color $animationDuration $animationTimingFunction;
+
     }
 
     .nav &:hover,

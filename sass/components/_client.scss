@@ -4,10 +4,28 @@
 
 .client__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    margin: -15px;
 }
 
-.client__item:not(:first-child) {
-    margin-left: 30px;
+// .client__item:not(:first-child) {
+//     margin-left: 30px;
+// }
+.client__item{
+    margin: 15px;
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 2 * 30px) / 2);
+    }
+    @media screen and ((min-width: $tablet)) and (max-width: 1199px) {
+        width: calc((100% - 3 * 30px) / 3);
+    }
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 6 * 30px) / 6);
+    }
 }
 
 .client__title{
@@ -18,14 +36,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    // width: 170px;
+    
+    
     height: 92px;
     border: 1px solid $socialLinkColor;
     fill: $socialLinkColor;
     border-radius: 4px;
 
-    // transition: fill var(--animation-duration) var(--animation-timing-function),
-    //     border-color var(--animation-duration) var(--animation-timing-function);
 
     @include transition(fill);
     @include transition(border-color);
