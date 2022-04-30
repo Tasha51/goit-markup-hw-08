@@ -69,11 +69,12 @@
     }
 
     &.is-open {
+        position: absolute;
         transform: translate(0);
         visibility: visible;
         pointer-events: initial;
 
-        &.mobile-menu__btn{
+        & .mobile-menu__btn{
         position: fixed;
          }
    }

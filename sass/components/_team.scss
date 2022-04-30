@@ -45,13 +45,14 @@
 
 .team__img{
     @extend %sectionImage;
-    width: 100%;
 
-    @media screen and (max-width:767px){
-    height: 460px;
+    @media screen and (min-width:$tablet)and (max-width:1199px){
+    height: 374px;
+    width: 354;
     }
-    @media screen and (max-width:1199px) {
-        height: 374px;
+    @media screen and (min-width:$desktop) {
+        height: 260px;
+        width: 270px;
     }
     
 }

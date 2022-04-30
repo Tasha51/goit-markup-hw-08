@@ -11,7 +11,14 @@
     padding-right: 30px;
     
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/home/img0-mobile.jpg);
+        url(../images/home/img0_sm.jpg);
+    
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/home/img0_sm@2x.jpg);}
 
     /* Если будет менятся картинка */
     background-repeat: no-repeat;
@@ -24,13 +31,33 @@
     
     text-align: center;
 
-     @media screen and (min-width:$tablet) {
+     @media screen and (min-width:$tablet) and (max-width:1199px){
      max-width: $tablet;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/home/img0_md.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/home/img0_md@2x.jpg);
+    }
 }
 
     @media screen and (min-width:$desktop){
         height: 600px;
-        max-width: 1600;
+        max-width: 1600px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/home/img0_lg.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/home/img0_lg@2x.jpg);
+        }
     }
 }
 
