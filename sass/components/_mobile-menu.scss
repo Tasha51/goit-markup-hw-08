@@ -44,8 +44,6 @@
     overflow-y: scroll;
 }
 
-
-
 .mobile-overlay{
     position: fixed;
     top: 0;
@@ -69,14 +67,14 @@
     }
 
     &.is-open {
-        position: absolute;
+        
         transform: translate(0);
         visibility: visible;
         pointer-events: initial;
 
-        & .mobile-menu__btn{
-        position: fixed;
-         }
+        // & .mobile-menu__btn{
+        // position: fixed;
+        //  }
    }
 }
 

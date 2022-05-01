@@ -13,10 +13,13 @@
 }
 
 .modal {
-   @media screen and (max-width:$mobile){
-       min-width: calc(100% - 30px);
-       
+   @media screen and (min-width:$mobile) and(max-width:1199px){
+       width: 450px;
    }
+    @media screen and (min-width:$desktop) {
+    
+        width: 528px;
+    }
 
     position: absolute;
     top: 50%;
@@ -34,6 +37,8 @@
     > .btn{
         margin-bottom: 40px;
     }
+
+    padding: 40px;
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -52,7 +57,10 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
-    margin-left: auto;
+    position: fixed;
+    top: 1%;
+    left: 92%;
+
     cursor: pointer;
 
     display: flex;
@@ -71,13 +79,14 @@
     line-height: 1.15;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 12px;
 }
 
 .modal__form {
     display: flex;
     flex-direction: column;
 
-    margin: 12px 33px 30px;
+    margin-bottom: 30px;
 }
 
 .modal__group {

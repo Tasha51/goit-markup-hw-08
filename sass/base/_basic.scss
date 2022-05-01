@@ -1,5 +1,5 @@
 // *{outline: 1px solid red;}
-.page {
+body {
 //    position: relative;
     display: flex;
     flex-direction: column;
@@ -8,6 +8,9 @@
     color: $primaryTextColor;
     font-family: $mainFontFamily;
     font-size: 14px;
+}
+.no-scroll {
+    overflow-y: hidden;
 }
 
 .basic {
@@ -39,11 +42,6 @@ ul {
 
     padding-top: 60px;
     padding-bottom: 60px;
-
-    @media screen and (min-width: $desktop) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
     
 }
 .container {

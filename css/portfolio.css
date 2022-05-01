@@ -7,6 +7,10 @@
   font-size: 14px;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .basic {
   flex-grow: 1;
 }
@@ -35,13 +39,6 @@ ul {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .container {
@@ -133,7 +130,6 @@ ul {
 @media screen and (min-width: 768px) {
   .nav__item {
     padding-left: 50px;
-    padding-right: 25px;
   }
 }
 
@@ -237,14 +233,9 @@ ul {
 }
 
 .mobile-overlay.is-open {
-  position: absolute;
   transform: translate(0);
   visibility: visible;
   pointer-events: initial;
-}
-
-.mobile-overlay.is-open .mobile-menu__btn {
-  position: fixed;
 }
 
 .mobile-menu {
@@ -425,12 +416,12 @@ ul {
 
 .filter {
   display: flex;
-  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 767px) {
   .filter {
     flex-wrap: wrap;
+    margin-bottom: 25px;
   }
 }
 
@@ -439,6 +430,13 @@ ul {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -597,7 +595,12 @@ ul {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-contacts {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -605,7 +608,14 @@ ul {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contacts > .container {
+    padding-left: 76px;
+    padding-right: 89px;
   }
 }
 
@@ -625,12 +635,6 @@ ul {
 @media screen and (max-width: 1199px) {
   .footer-contact__wrapper {
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-contact__wrapper, .footer-social__wrapper {
-    flex-basis: calc((100%-2 * 165px) / 2);
   }
 }
 
@@ -664,7 +668,7 @@ ul {
   color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-social__wrapper {
     margin-bottom: 60px;
   }

@@ -65,16 +65,23 @@
 
 
 .hero__title {
-    // width: 696px;
+    //
     margin-bottom: 30px;
 
     color: $extraColor;
     font-weight: 900;
-    // font-size: 44px;
+    // 
     font-size: 26px;
     text-transform: uppercase;
     text-align: center;
-    // line-height: 1.36;
+    // 
     line-height: 1.62;
     letter-spacing: 0.06em;
+
+    @media screen and (min-width: $desktop){
+        font-size: 44px;
+        width: 696px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

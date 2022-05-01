@@ -45,7 +45,6 @@
     
     @include transition(color);
 
-
     &:hover, &:focus{
         color: $accentColor;
     }

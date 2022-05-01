@@ -17,10 +17,10 @@
 // }
 .client__item{
     margin: 15px;
-    @media screen and (max-width: 767px) {
+    @media screen {
         width: calc((100% - 2 * 30px) / 2);
     }
-    @media screen and ((min-width: $tablet)) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) {
         width: calc((100% - 3 * 30px) / 3);
     }
     @media screen and (min-width: $desktop) {
