@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -39,6 +43,13 @@ ul {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -360,6 +371,12 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts__link {
+    font-size: 12px;
+  }
 }
 
 .header-contacts__link:hover, .header-contacts__link:focus {

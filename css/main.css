@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  outline: 1px solid red;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -40,6 +44,13 @@ ul {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -363,6 +374,12 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts__link {
+    font-size: 12px;
+  }
+}
+
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: #2196f3;
 }
@@ -431,14 +448,20 @@ ul {
   text-align: center;
   line-height: 1.62;
   letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     width: 696px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -480,7 +503,7 @@ ul {
 }
 
 .work__title, .team__title, .client__title {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -637,8 +660,10 @@ ul {
   text-align: center;
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

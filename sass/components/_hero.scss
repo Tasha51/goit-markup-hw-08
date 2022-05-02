@@ -78,10 +78,15 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
 
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 360px;
+    }
+
     @media screen and (min-width: $desktop){
         font-size: 44px;
         width: 696px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
